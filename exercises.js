@@ -96,6 +96,19 @@ Write a for-loop that will push even numbers to the `evenNumArr` array. We want 
 Console.log your results.
 */
 
+var evenNumArr =[];
+
+function fillArrayWEvenNum(count,array) {
+  for(var i = 0;i<count;i++) {
+    array.push(i * 2);
+  }
+  return array;
+}
+
+var evenArray = fillArrayWEvenNum(50,evenNumArr);
+console.log("evenArray: " + evenArray);
+
+
 
 /* 6) Up the Odds
 Declare a variable named `oddSum` and assign it to the Number value 0.
@@ -103,6 +116,8 @@ Declare a variable named `oddSum` and assign it to the Number value 0.
 Write a for-loop that will sum up odd numbers to the `oddSum` variable. We want to add 50 odd numbers starting from 1.
 Console.log your results.
 */
+
+
   
 
 /* 7) Oops There It is
