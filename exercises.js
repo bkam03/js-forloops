@@ -27,6 +27,12 @@ This week's chart buster is: '24K Magic.'
 
 var topFive = ["Closer", "Starboy", "I Feel It Coming", "Let Me Love You", "24K Magic"];
 
+function displayArray(array) {
+  for(var i = 0; i < array.length;i++) {
+    console.log("This week's chart buster is: " + array[i]);
+  }
+}
+displayArray(topFive);
 
 /* 3) Dead Presidents
 Declare a variable named `presidents` and assign it to an array containing the following Presidents: Washington, Adams, Jefferson, Madison and Monroe.
@@ -48,6 +54,18 @@ This function will iterate through the person parameter and console.log the foll
 "President person was a great leader."
 */
 
+var presidents = ["Washington","Adams","Jefferson","Madison","Monroe"];
+console.log("pres array:",presidents);
+
+function countingPres(array) {
+  console.log("function is working");
+  for(var i = 0;i < array.length;i++) {
+    console.log("the value at " + i + " is " + array[i] + ".");
+  }
+
+}
+countingPres(presidents);
+console.log(presidents.length);
 
 /* 4) Line Number
 Declare a variable named `stringOfNumbers` and assign its value to an empty string. 
