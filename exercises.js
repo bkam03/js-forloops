@@ -117,8 +117,17 @@ Write a for-loop that will sum up odd numbers to the `oddSum` variable. We want 
 Console.log your results.
 */
 
+var oddSum = 0;
+var oddNum = 1;
+var oddArray =[];
+for(var i = 0;i<50;i++) {
+  oddArray.push(oddNum);
+  oddSum+=oddNum;
+  oddNum+=2;
+}  
+console.log("oddArray & oddSum" +oddArray+" = " +oddSum);
 
-  
+
 
 /* 7) Oops There It is
 Declare a variable named `oopsArray` and assign its to the following array: `[ 'turn' , , 'down' , , 'for' , , 'what' ]`.
