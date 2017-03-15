@@ -277,6 +277,25 @@ Write a function that will capitalize the first letter in each word in the phras
 
 var myWay = "i've lived a life that's full, i've traveled each and every highway. but more, much more than this. i did it my way.";
 
+function oneCap(str) {
+  var firstLetter = str.charAt(0); //string.charAt(#)
+  var restOfString = str.slice(1);  //slice(first) leave off 2nd arg so infinite
+  return firstLetter.toUpperCase() + restOfString;
+  //return firstLetter after it gets capitalized, then concat rest of string.
+}
+function titleize(string)  {  //capitalize first letter of word
+  var stringArray = string.split(" "); //conv phrase to array
+  var finalString ="";  //end result collector
+
+  for(var i = 0; i<stringArray.length; i++) {
+    var currentWord = stringArray[i];
+    finalString = finalString + oneCap(currentWord) + " ";
+  }  //take one word at a time in array, capitalize and add space.
+
+  return finalString;
+
+}
+console.log(titleize(myWay));
 
 
 /* 14) Back to School
