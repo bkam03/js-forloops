@@ -231,14 +231,10 @@ function longestWord(quote) {
       biggestWord = [quote[i]];
       console.log("replace");
     } 
-
-
-    /*
-    }*/
-
   }
   console.log(biggestWord);
 }
+
 longestWord(topQuote);
 
 
@@ -252,6 +248,27 @@ Write a function named `generateArrayOfStrings` which takes a single argument `s
 
 */
 
+var miscStorage = [ [],"Carrots",9,"Beets",{},{name:"Todd X."},"Mush"];
+
+
+function generateArrayOfStrings(storage) {
+  var newMiscStorage = [];
+  var objectCounter;
+  for(var i = 0;i<storage.length;i++) {
+    if(typeof storage[i] === "string") {
+      //console.log(storage[i],"string");
+      newMiscStorage.push(storage[i]);
+    /*}else if(typeof storage[i] === "object") {
+      for( objectCounter in storage[i]) {
+        console.log("objectLoop:",storage[i]);
+      }*/
+      
+    }
+  }
+  return newMiscStorage;
+}
+
+console.log(generateArrayOfStrings(miscStorage));
 
 
 /* 13) All Grown Up 
